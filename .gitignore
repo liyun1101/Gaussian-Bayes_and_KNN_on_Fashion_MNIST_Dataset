@@ -1,5 +1,6 @@
 # PyCharm artifacts
 __pycache__/
+.idea/
 
 # Python
 *.pyc
