@@ -15,13 +15,13 @@ def main():
     bayes_lda.fit(lda_train, train_label)
     predict_category_lda = bayes_lda.gaussian_predict(lda_test)
     accuracy_lda = test_accuracy(predict_category_lda, test_label)
-    print("Bayes accuracy with LDA dataset: ", accuracy_lda * 100, "%")
+    print("Bayes accuracy with LDA dataset: ", np.round(accuracy_lda * 100, decimals=2), "%")
 
     bayes_pca = BayesGaussian()
     bayes_pca.fit(pca_train, train_label)
     predict_category_pca = bayes_pca.gaussian_predict(pca_test)
     accuracy_pca = test_accuracy(predict_category_pca, test_label)
-    print("Bayes accuracy with PCA dataset: ", accuracy_pca * 100, "%")
+    print("Bayes accuracy with PCA dataset: ", np.round(accuracy_pca * 100, decimals=2), "%")
 
 
 if __name__ == '__main__':
