@@ -9,13 +9,13 @@
 ## Overview
 This project utilized two machine learning methods to classify the fashion MNIST dataset:
  
- - ML estimation with Gaussian assumption followed by Bayes rule
- - K-Nearest-Neighbor  
- 
+- ML estimation with Gaussian assumption followed by Bayes rule
+- K-Nearest-Neighbor  
+
 Two dimensionality reduction techniques are applied on both machine learning methods: 
  
- - PCA (Principal Component Analysis)
- - LDA (Linear Discriminant Analysis)
+- PCA (Principal Component Analysis)
+- LDA (Linear Discriminant Analysis)
 ## Dataset
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
