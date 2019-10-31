@@ -32,3 +32,27 @@ Two dimensionality reduction techniques are applied on both machine learning met
 
 ### KNN Parameters
 - **neighbor_num:** Number of neighbors taken into calculation.
+
+## Results
+### KNN with Different Parameters
+
+- K-Neighbors
+![Accuracy vs K Neighbors_scaled](visualization/KNN%20Accuracy%20vs%20K%20Neighbors.png)
+- Dimension Reduction Parameters
+![Accuracy vs PCA&LDA](visualization/KNN%20Accuracy%20vs%20PCA_LDA%20N%20Dimensions.png)
+![Low PCA&LDA Parameters](visualization/KNN%20Accuracy%20vs%20PCA_LDA%20N%20Dimensions_Low.png)
+
+
+### Bayes vs KNN
+The gaussian based Bayes classifier is a simple self built class, thus the accuracy maybe lower than the built-in 
+classifier from scikit-learn or other libraries.
+
+PCA dimension is set to 30 and LDA set to default in both methods.
+
+Datasets | Bayes Accuracy | KNN Accuracy
+-------- | -------------- | ------------ 
+LDA Training set |      |  
+PCA Training set |      |
+LDA Testing set | |
+PCA Testing set | |
+
