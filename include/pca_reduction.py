@@ -2,7 +2,7 @@ from sklearn.decomposition import PCA
 import time
 
 
-def pca_reduction(input_train, input_test, pca_target_dim=0):
+def pca_reduction(input_train, input_test, pca_target_dim=30):
     start_time = time.time()
     print("\nPCA in progress >>> ")
     if pca_target_dim:

@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-from KNN_main import *
+import KNN_main
 
 
 def knn_visualize():
@@ -11,7 +11,7 @@ def knn_visualize():
     k_list = list(range(1, 21))
     for k_neighbor in range(1, 21):
         print(f"\n***** K = {k_neighbor} *****\n")
-        accuracy_lda_train, accuracy_pca_train, accuracy_lda, accuracy_pca = knn_main(neighbor_num=k_neighbor)
+        accuracy_lda_train, accuracy_pca_train, accuracy_lda, accuracy_pca = KNN_main.knn_main(neighbor_num=k_neighbor)
         accuracy_lda_train_list.append(accuracy_lda_train)
         accuracy_pca_train_list.append(accuracy_pca_train)
         accuracy_lda_list.append(accuracy_lda)
@@ -37,7 +37,8 @@ def knn_visualize():
     # k_list = list(range(10, 41))
     # for n_dim in range(10, 41):
     #     print(f"\n***** K dim = {n_dim} *****\n")
-    #     accuracy_lda_train, accuracy_pca_train, accuracy_lda, accuracy_pca = knn_main(pca_dim=n_dim, lda_comp=n_dim)
+    #     accuracy_lda_train, accuracy_pca_train, accuracy_lda, accuracy_pca = KNN_main.knn_main(pca_dim=n_dim,
+    #                                                                                            lda_comp=n_dim)
     #     accuracy_lda_train_list.append(accuracy_lda_train)
     #     accuracy_pca_train_list.append(accuracy_pca_train)
     #     accuracy_lda_list.append(accuracy_lda)

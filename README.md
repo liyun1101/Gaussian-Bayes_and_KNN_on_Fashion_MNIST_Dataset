@@ -28,7 +28,7 @@ Two dimensionality reduction techniques are applied on both machine learning met
 - **pca_target_dim:** Using PCA to reduce the data dimension to this number.
 
 ### LDA Parameters
-- **components_number:** Using LDA to reduce the data dimension to this number.
+- **components_number:** Number of components (< n_classes - 1) for dimensionality reduction.
 
 ### KNN Parameters
 - **neighbor_num:** Number of neighbors taken into calculation.

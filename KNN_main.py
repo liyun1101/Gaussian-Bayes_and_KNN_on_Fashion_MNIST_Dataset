@@ -5,7 +5,7 @@ from include.test_accuracy import *
 from include.knn_predict import *
 
 
-def knn_main(pca_dim=30, lda_comp=None, neighbor_num=5, weight='uniform'):
+def knn_main(pca_dim=30, lda_comp=None, neighbor_num=8, weight='uniform'):
     train_image_knn, train_label_knn = load_mnist('data/fashion', kind='train')
     test_image_knn, test_label_knn = load_mnist('data/fashion', kind='t10k')
     pca_train_knn, pca_test_knn = pca_reduction(train_image_knn, test_image_knn, pca_target_dim=pca_dim)
