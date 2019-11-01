@@ -73,9 +73,9 @@ For more visualization images, please refer to visualization folder.
 
 *Figure 6. Accuracy and K Number*
 
-From figure 2, it is clear that KNN reaches 100% accuracy on training set when K is set to 1. This is a typical 
+From Figure 2, it is clear that KNN reaches 100% accuracy on training set when K is set to 1. This is a typical 
 overfitting circumstance. When increasing the K number, the accuracy on test set increased slightly and begin to be 
-stable after K reaches 7. 
+stable after K reaches 7. So the default K number in this project is set to 7 after this demo.
 
 - Dimension Reduction Parameters
 
@@ -83,9 +83,18 @@ stable after K reaches 7.
 
 *Figure 7. Accuracy with PCA and LDA*
 
+When the dimension number N is larger than 10, the PCA accuracy increases as N increases, however LDA accuracy is always
+the same. After referring to scikit-learn manual, components_number has a higher limit which is 
+max(dimension_number - 1, class_number - 1). In this case, the class number is 10, so the higher limit for components 
+number in LDA is 9. Which means in Figure 7, the LDA is always 9-dimensional. Thus, the accuracy keeps at a fixed value.
+
+
 ![Low PCA&LDA Parameters](visualization/KNN%20Accuracy%20vs%20PCA_LDA%20N%20Dimensions_Low.png)
 
 *Figure 8. Accuracy with Low PCA and LDA Value*
+
+Setting N under 10, both PCA and LDA accuracies are monotonically increasing. From Figure 7 and Figure 8, the default
+number of N is set to 30 in this project to get a stable result.
 
 ### Bayes vs KNN
 The gaussian based Bayes classifier is a simple self built class, thus the accuracy maybe lower than the built-in 
@@ -93,7 +102,7 @@ classifier from scikit-learn or other libraries.
 
 PCA dimension is set to 30 and LDA set to default in both methods.
 
-Datasets | Bayes Accuracy | KNN Accuracy
+Dataset | Bayes Accuracy | KNN Accuracy
 -------- | -------------- | ------------ 
 LDA Training set | 75.12 % | 87.00 %
 PCA Training set | 71.91 % | 88.59 %
