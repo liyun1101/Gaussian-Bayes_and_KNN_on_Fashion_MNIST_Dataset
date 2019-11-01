@@ -71,8 +71,8 @@ PCA dimension is set to 30 and LDA set to default in both methods.
 
 Datasets | Bayes Accuracy | KNN Accuracy
 -------- | -------------- | ------------ 
-LDA Training set |      |  
-PCA Training set |      |
-LDA Testing set | |
-PCA Testing set | |
+LDA Training set | 75.12 % | 87.00 %
+PCA Training set | 71.91 % | 88.59 %
+LDA Testing set | 73.70 % | 83.06 %
+PCA Testing set | 71.58 % | 85.46 %
 
