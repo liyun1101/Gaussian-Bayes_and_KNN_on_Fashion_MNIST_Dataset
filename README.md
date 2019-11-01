@@ -6,6 +6,8 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/bff26b8d5c544e84a70ca430d1129d57)](https://www.codacy.com/manual/nuclearczy/Gaussian-Bayes_and_KNN_on_Fashion_MNIST_Dataset?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=nuclearczy/Gaussian-Bayes_and_KNN_on_Fashion_MNIST_Dataset&amp;utm_campaign=Badge_Grade)
 [![GitHub top language](https://img.shields.io/github/languages/top/nuclearczy/Gaussian-Bayes_and_KNN_on_Fashion_MNIST_Dataset)](https://www.python.org/)
 
+**Author: Zuyang Cao**
+
 ## Overview
 This project employed two machine learning methods to classify the fashion MNIST dataset:
  
@@ -46,6 +48,10 @@ Two dimensionality reduction techniques are applied on both machine learning met
 ![Accuracy vs K Neighbors_scaled](visualization/KNN%20Accuracy%20vs%20K%20Neighbors.png)
 
 *Figure 2. Accuracy and K Number*
+
+From figure 2, it is clear that KNN reaches 100% accuracy on training set when K is set to 1. This is a typical 
+overfitting circumstance. When increasing the K number, the accuracy on test set increased slightly and begin to be 
+stable after K reaches 7. 
 
 - Dimension Reduction Parameters
 
