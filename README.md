@@ -63,6 +63,8 @@ Two dimensionality reduction techniques are applied on both machine learning met
 
 *Figure 5. LDA training set 3D*
 
+For more visualization images, please refer to visualization folder.
+
 ### KNN with Different Parameters
 
 - K-Neighbors
