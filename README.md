@@ -16,6 +16,7 @@ Two dimensionality reduction techniques are applied on both machine learning met
  
 - PCA (Principal Component Analysis)
 - LDA (Linear Discriminant Analysis)
+
 ## Dataset
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -23,7 +24,10 @@ Two dimensionality reduction techniques are applied on both machine learning met
 
 ![Dataset Visualized](visualization/fashion-mnist-sprite.png "Dataset Visualized")
 
+*Figure 1. Visualized Dataset*
+
 ## Tunable Parameters
+
 ### PCA Parameters
 - **pca_target_dim:** Using PCA to reduce the data dimension to this number.
 
@@ -34,14 +38,24 @@ Two dimensionality reduction techniques are applied on both machine learning met
 - **neighbor_num:** Number of neighbors taken into calculation.
 
 ## Results
+
 ### KNN with Different Parameters
 
 - K-Neighbors
+
 ![Accuracy vs K Neighbors_scaled](visualization/KNN%20Accuracy%20vs%20K%20Neighbors.png)
+
+*Figure 2. Accuracy and K Number*
+
 - Dimension Reduction Parameters
+
 ![Accuracy vs PCA&LDA](visualization/KNN%20Accuracy%20vs%20PCA_LDA%20N%20Dimensions.png)
+
+*Figure 3. Accuracy with PCA and LDA*
+
 ![Low PCA&LDA Parameters](visualization/KNN%20Accuracy%20vs%20PCA_LDA%20N%20Dimensions_Low.png)
 
+*Figure 4. Accuracy with Low PCA and LDA Value*
 
 ### Bayes vs KNN
 The gaussian based Bayes classifier is a simple self built class, thus the accuracy maybe lower than the built-in 
