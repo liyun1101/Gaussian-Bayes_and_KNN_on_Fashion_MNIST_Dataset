@@ -109,3 +109,6 @@ PCA Training set | 71.91 % | 88.59 %
 LDA Testing set | 73.70 % | 83.06 %
 PCA Testing set | 71.58 % | 85.46 %
 
+For Bayes running output log sample, please refer to 
+[Travis](https://travis-ci.com/nuclearczy/Gaussian-Bayes_and_KNN_on_Fashion_MNIST_Dataset)
+ building log. The running result is at the end of the log.
